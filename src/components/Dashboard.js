@@ -31,7 +31,7 @@ if (hour < 12) {
   const [users, setUsers] = useState([]);
   const [tickets, setTickets] = useState([]);
   const name = localStorage.getItem("name");
-  const [myTickets, setMyTickets] = useState([]);
+  const [myTickets] = useState([]);
   const [notifications, setNotifications] = useState([]);
   const [report, setReport] = useState({
     totalTickets: 0,
