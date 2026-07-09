@@ -31,7 +31,7 @@ if (hour < 12) {
   const [users, setUsers] = useState([]);
   const [tickets, setTickets] = useState([]);
   const name = localStorage.getItem("name");
-  const [myTickets] = useState([]);
+  const [myTickets,setMyTickets] = useState([]);
   const [notifications, setNotifications] = useState([]);
   const [report, setReport] = useState({
     totalTickets: 0,
@@ -63,8 +63,9 @@ if (hour < 12) {
     .then(res => setReport(res.data))
     .catch(err => console.log(err));
 
-       // API.get("/tickets/my")
-    //.then(res => setMyTickets(res.data));
+        API.get("/tickets/my")
+    .then(res => setMyTickets(res.data));
+    .catch(err => console.log(err));
 
 }, []);
 
