@@ -64,8 +64,9 @@ if (hour < 12) {
     .catch(err => console.log(err));
 
         API.get("/tickets/my")
-    .then(res => setMyTickets(res.data));
+    .then(res => setMyTickets(res.data))
     .catch(err => console.log(err));
+    
 
 }, []);
 
