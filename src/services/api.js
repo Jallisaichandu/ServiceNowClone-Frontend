@@ -17,7 +17,8 @@ export default API;*/
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://servicenowclone-backend-production.up.railway.app"
+    baseURL: "https://servicenowclone-backend-production.up.railway.app",
+    withCredentials: true
 });
 
 API.interceptors.request.use((config) => {
