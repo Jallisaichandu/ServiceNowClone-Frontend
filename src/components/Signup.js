@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import API from "../services/api";
-
+console.log("Signup Component Loaded");
 function Signup({ goToLogin }) {
 
     const [name, setName] = useState("");
@@ -23,9 +23,17 @@ function Signup({ goToLogin }) {
             }
 
         })
-        .catch(() => {
-            alert("Registration Failed");
-        });
+      .catch((error) => {
+    console.log("ERROR:", error);
+
+    if (error.response) {
+        console.log("Status:", error.response.status);
+        console.log("Data:", error.response.data);
+        alert(JSON.stringify(error.response.data));
+    } else {
+        alert(error.message);
+    }
+});
 
     };
 

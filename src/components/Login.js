@@ -76,7 +76,7 @@ function Login({ onLogin, goToSignup }) {
     Don't have an account?
 </p>
 
-<button onClick={goToSignup}>
+<button onClick={() => goToSignup()}>
     Sign Up
 </button>
 
