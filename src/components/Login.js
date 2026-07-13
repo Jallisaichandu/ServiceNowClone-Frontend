@@ -15,10 +15,11 @@ function Login({ onLogin }) {
 
     API.post("/auth/login", loginData)
       .then((response) => {
-        
+
         console.log("LOGIN RESPONSE:", response.data);
 
         // Save login details
+        localStorage.setItem("loggedIn", "true");
         localStorage.setItem("token", response.data.token);
         localStorage.setItem("role", response.data.role);
         localStorage.setItem("name", response.data.name);
