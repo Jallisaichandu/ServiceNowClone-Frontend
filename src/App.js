@@ -41,14 +41,7 @@ function App() {
 
   if (!loggedIn) {
 
-    if(showSignup){
-        return (
-            <Signup
-                goToLogin={() => setShowSignup(false)}
-            />
-        );
-    }
-
+    
     return (
         <Login
             onLogin={() => setLoggedIn(true)}
@@ -56,6 +49,14 @@ function App() {
         />
     );
 }
+if(showSignup){
+  console.log("Showing Signup Page");
+        return (
+            <Signup
+                goToLogin={() => setShowSignup(false)}
+            />
+        );
+    }
 
   return (
     <div className="container">
