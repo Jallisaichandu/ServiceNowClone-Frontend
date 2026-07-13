@@ -222,6 +222,9 @@ ul{
     background:linear-gradient(135deg,#ef4444,#201e1e);
 
 }
+.priority-high{
+    background:linear-gradient(135deg,#ef4444,#888787);
+}
 
 /*   DASHBOARD CONTENT*/
 
@@ -1609,4 +1612,20 @@ body{
 
     background:#eff6ff;
 
+}
+.high-card{
+    border-left:6px solid #dc2626;
+}
+input[type="file"]{
+    margin:10px 0;
+}
+
+table a{
+    color:#2563eb;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+table a:hover{
+    text-decoration:underline;
 }
