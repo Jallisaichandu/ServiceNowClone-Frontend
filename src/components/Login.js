@@ -70,8 +70,18 @@ function Login({ onLogin }) {
       <button onClick={handleLogin}>
         Login
       </button>
+      <br /><br />
+
+<p>
+    Don't have an account?
+</p>
+
+<button onClick={() => window.location="/signup"}>
+    Sign Up
+</button>
 
     </div>
+    
   );
 }
 
