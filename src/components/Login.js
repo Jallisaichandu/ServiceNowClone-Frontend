@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import API from "../services/api";
 
-function Login({ onLogin }) {
+function Login({ onLogin, goToSignup }) {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -76,7 +76,7 @@ function Login({ onLogin }) {
     Don't have an account?
 </p>
 
-<button onClick={() => window.location="/signup"}>
+<button onClick={goToSignup}>
     Sign Up
 </button>
 

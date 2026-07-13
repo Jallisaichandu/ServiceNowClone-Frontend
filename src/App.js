@@ -15,6 +15,10 @@ import Tickets from "./components/Tickets";
 import Login from "./components/Login";
 import Navbar from "./components/Navbar";
 import Profile from "./components/Profile";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+
 
 function App() {
 
@@ -111,6 +115,18 @@ function App() {
       </div>
      
     </div>
+    
+  );
+  
+}
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
