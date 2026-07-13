@@ -38,6 +38,8 @@ function App() {
     setLoggedIn(false);
   };
   const [showSignup, setShowSignup] = useState(false);
+  console.log("showSignup =", showSignup);
+  
 
   if (!loggedIn) {
 
