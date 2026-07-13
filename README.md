@@ -165,37 +165,18 @@ DELETE /attachments/{id}
 
 ## Deployment
 
-Frontend is deployed using Vercel.
+🌐 Frontend (Vercel)
 
-Backend APIs are hosted on Railway.
+https://service-now-clone-frontend.vercel.app
 
----
+⚙️ Backend (Railway)
 
-## Screenshots
-
-Add screenshots here.
-
-```
-screenshots/
-    login.png
-    dashboard.png
-    users.png
-    tickets.png
-    profile.png
-```
-
-## Future Improvements
-
-- Dark Theme
-- Mobile Responsive Design
-- Email Verification
-- Real-Time Notifications
-- Password Reset
-- Cloud Storage for Attachments
-- Better Dashboard Analytics
-- User Activity Logs
+https://servicenowclone-backend-production.up.railway.app
 
 ---
+
+
+
 
 **Sai Chandu Jalli**
 
