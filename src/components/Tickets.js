@@ -471,6 +471,7 @@ const deleteAttachment = (id) => {
 <br /><br />
 
             <br /><br />
+            <div className="table-responsive">
 
             <table border="1" cellPadding="10">
 
@@ -763,6 +764,7 @@ ticket.status === "OPEN"
     </button>
 
     <br /><br />
+    <div className="table-responsive">
 
     <table>
 
@@ -818,6 +820,7 @@ ticket.status === "OPEN"
 
     </table>
 
+</div>
 </div>
 
 
@@ -881,6 +884,7 @@ By :
 )
 
 }
+        </div>
         </div>
         
 

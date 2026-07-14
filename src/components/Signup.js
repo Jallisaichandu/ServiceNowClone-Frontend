@@ -38,7 +38,10 @@ function Signup({ goToLogin }) {
     };
 
     return (
-        <div>
+        
+            <div className="login-container">
+    <div className="login-card">
+
 
             <h2>Sign Up</h2>
 
@@ -67,6 +70,7 @@ function Signup({ goToLogin }) {
             <button onClick={register}>
                 Register
             </button>
+            </div>div
 
         </div>
     );

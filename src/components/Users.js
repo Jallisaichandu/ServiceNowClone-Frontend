@@ -145,6 +145,7 @@ const updateUser = () => {
 />
 
 <br /><br />
+<div className="table-responsive">
 
       <table border="1" cellPadding="10">
 
@@ -195,6 +196,7 @@ const updateUser = () => {
         </tbody>
 
       </table>
+      </div>
 
     </div>
   );
